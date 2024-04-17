@@ -99,5 +99,10 @@ fi
 #    . /etc/bash_completion
 #fi
 
+function reload_profile() {
+    source ~/.config/.bashrc
+}
+
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
+export PATH=$PATH:/usr/local/go/bin
