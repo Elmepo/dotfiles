@@ -82,6 +82,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vi='nvim'
+alias update_profile='vi ~/.config/.bashrc'
+alias update_config='vi ~/.config/'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
