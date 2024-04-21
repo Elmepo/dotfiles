@@ -5,6 +5,7 @@ return {
     },
     {
         'tpope/vim-fugitive',
+        lazy = false
     },
     {
         'NStefan002/speedtyper.nvim',
