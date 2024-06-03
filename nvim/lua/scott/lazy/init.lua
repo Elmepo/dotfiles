@@ -40,5 +40,23 @@ return {
         config = function()
             require('dressing').setup()
         end,
+    },
+    {
+        'numToStr/Comment.nvim',
+        lazy = false,
+        opts = {}
+    },
+    {
+        "NStefan002/2048.nvim",
+        cmd = "Play2048",
+        config = true,
+    },
+    {
+        "jim-fx/sudoku.nvim",
+        cmd = "Sudoku",
+        config = function()
+            require("sudoku").setup({
+            })
+        end
     }
 }
