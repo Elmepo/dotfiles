@@ -46,3 +46,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("scott.lazy_init")
+vim.cmd(":Copilot disable")
+require("notify")("Copilot LSP has been disabled. To reenable use :Copilot enable")

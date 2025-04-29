@@ -45,3 +45,8 @@ vim.keymap.set("v", "<leader>cpc", "<cmd>CopilotChatExplain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set("n", "<leader>l", "<cmd>vertical resize +10<CR>");
+vim.keymap.set("n", "<leader>h", "<cmd>vertical resize -10<CR>");
+
+vim.keymap.set("n", "<leader>jq", "<cmd>%!jq '.'<CR>");
