@@ -21,6 +21,7 @@ return {
       },
       config = function()
         local lsp_zero = require('lsp-zero')
+        -- vim.lsp.set_log_level("off")
 
         lsp_zero.on_attach(function(client, bufnr)
           local opts = {buffer = bufnr, remap = false}

@@ -9,8 +9,11 @@ return {
       lazy = false,
       name = 'rose-pine',
       config = function()
-          vim.cmd('colorscheme rose-pine-moon')
-          ColorScreen()
+          require('rose-pine').setup({
+              disable_background = true,
+          })
+          -- vim.cmd('colorscheme rose-pine-moon')
+          ColorScreen('rose-pine-moon')
       end,
     },
 }

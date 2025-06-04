@@ -37,6 +37,16 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/scott/lazy/init.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
+-- Copilot Related
+vim.keymap.set("n", "<leader>cpp", "<cmd>Copilot panel<CR>");
+vim.keymap.set("n", "<leader>cpc", "<cmd>CopilotChat<CR>");
+vim.keymap.set("v", "<leader>cpc", "<cmd>CopilotChatExplain<CR>");
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set("n", "<leader>l", "<cmd>vertical resize +10<CR>");
+vim.keymap.set("n", "<leader>h", "<cmd>vertical resize -10<CR>");
+
+vim.keymap.set("n", "<leader>jq", "<cmd>%!jq '.'<CR>");
